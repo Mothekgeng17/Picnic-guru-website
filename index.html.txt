@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mo' The Picnic Guru</title>
+</head>
+
+<body>
+
+<h1>Mo' The Picnic Guru</h1>
+
+<p>Welcome to our world of beautiful and unforgettable picnic experiences.</p>
+
+<nav>
+    <a href="about.html">About</a> |
+    <a href="services.html">Services</a> |
+    <a href="contact.html">Contact</a>
+</nav>
+
+</body>
+</html>

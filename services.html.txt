@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services</title>
+</head>
+
+<body>
+
+<h1>Our Services</h1>
+
+<ul>
+    <li>Romantic picnics</li>
+    <li>Birthday setups</li>
+    <li>Kiddies parties</li>
+</ul>
+
+<a href="index.html">Back to Home</a>
+
+</body>
+</html>
