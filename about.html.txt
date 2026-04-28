@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>About Us</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<h1>About Us</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<p>Mo’ The Picnic Guru is an event décor business based in Limpopo.</p>
+    <h1>About Mo' The Picnic Guru</h1>
 
-<a href="index.html">Back to Home</a>
+    <p>
+        Mo’ The Picnic Guru is a Limpopo-based event décor company
+        specializing in elegant picnic experiences and unforgettable celebrations.
+    </p>
+
+    <img src="images/picnic2.jpg" width="350" alt="About Image">
+
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
