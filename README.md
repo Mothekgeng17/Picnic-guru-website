@@ -334,7 +334,7 @@ GitHub Pages Link:
 Add your published GitHub Pages URL here.
 
 Example:
-https://yourusername.github.io/picnic-guru-website/
+https://github.com/Mothekgeng17/Picnic-guru-website
 
 ---
 
