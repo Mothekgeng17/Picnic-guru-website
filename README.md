@@ -1,6 +1,6 @@
 # 🌸 Mo' The Picnic Guru Website
 
-**By ST10433587**
+**By ST10501204**
 
 ---
 
@@ -321,8 +321,8 @@ The completed project successfully achieved:
 
 ## Mogwape Mothekgeng Masemola
 
-* Student Number: ST10433587
-* Institution: Rosebank 
+* Student Number: ST10501204
+* Institution: Rosebank Polokwane
 * Module: WEDE5020
 
 ---
