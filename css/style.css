@@ -517,3 +517,15 @@ footer{
     }
 }
 ```
+```css id="activeimg002"
+/* =========================
+   ACTIVE GALLERY IMAGE
+========================= */
+
+.active-image{
+
+    transform: scale(1.08);
+
+    transition: 0.4s ease;
+}
+```
