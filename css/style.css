@@ -937,3 +937,15 @@ p{
         gap: 25px;
     }
 }
+/* =========================
+   PERFORMANCE + MOTION FIXES
+========================= */
+
+section {
+    will-change: transform, opacity;
+}
+
+.gallery-card img,
+.hero-btn {
+    will-change: transform;
+}
