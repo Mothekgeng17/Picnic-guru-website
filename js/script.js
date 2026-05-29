@@ -1,45 +1,75 @@
-```javascript id="luxuryjs001"
 /* =========================
-   WEBSITE LOADED MESSAGE
+   WEBSITE LOADED
 ========================= */
 
 console.log("Mo' The Picnic Guru Website Loaded Successfully");
 
 /* =========================
-   SMOOTH FADE-IN ANIMATION
+   SCROLL REVEAL (SMOOTHER + MODERN)
 ========================= */
 
 const sections = document.querySelectorAll("section");
 
+const revealObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+        }
+    });
+
+}, {
+    threshold: 0.15
+});
+
+/* Initial state */
+sections.forEach(section => {
+
+    section.style.opacity = "0";
+    section.style.transform = "translateY(40px)";
+    section.style.transition = "all 0.9s ease";
+
+    revealObserver.observe(section);
+});
+
+/* =========================
+   NAVBAR ACTIVE LINK (ON SCROLL)
+========================= */
+
+const navLinks = document.querySelectorAll(".nav-links a");
+
+const allSections = document.querySelectorAll("section");
+
 window.addEventListener("scroll", () => {
 
-    sections.forEach(section => {
+    let current = "";
 
-        const sectionTop = section.getBoundingClientRect().top;
+    allSections.forEach(section => {
 
-        const screenPosition = window.innerHeight / 1.2;
+        const sectionTop = section.offsetTop;
 
-        if(sectionTop < screenPosition){
+        if (pageYOffset >= sectionTop - 150) {
 
-            section.style.opacity = "1";
-            section.style.transform = "translateY(0)";
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === "#" + current) {
+
+            link.classList.add("active");
         }
     });
 });
 
 /* =========================
-   INITIAL SECTION STYLING
-========================= */
-
-sections.forEach(section => {
-
-    section.style.opacity = "0";
-    section.style.transform = "translateY(40px)";
-    section.style.transition = "all 1s ease";
-});
-
-/* =========================
-   BUTTON HOVER EFFECT
+   HERO BUTTON INTERACTION (SMOOTHER)
 ========================= */
 
 const buttons = document.querySelectorAll(".hero-btn");
@@ -48,17 +78,17 @@ buttons.forEach(button => {
 
     button.addEventListener("mouseenter", () => {
 
-        button.style.transform = "scale(1.05)";
+        button.style.transform = "translateY(-5px) scale(1.05)";
     });
 
     button.addEventListener("mouseleave", () => {
 
-        button.style.transform = "scale(1)";
+        button.style.transform = "translateY(0) scale(1)";
     });
 });
 
 /* =========================
-   GALLERY IMAGE EFFECT
+   GALLERY IMAGE TOGGLE (IMPROVED)
 ========================= */
 
 const galleryImages = document.querySelectorAll(".gallery-card img");
@@ -67,16 +97,20 @@ galleryImages.forEach(image => {
 
     image.addEventListener("click", () => {
 
-        image.classList.toggle("active-image");
+        // remove active from others (clean gallery feel)
+        galleryImages.forEach(img => img.classList.remove("active-image"));
+
+        image.classList.add("active-image");
     });
 });
 
 /* =========================
-   WELCOME ALERT
+   PAGE LOAD ANIMATION TRIGGER
 ========================= */
 
-window.onload = function(){
+window.addEventListener("load", () => {
+
+    document.body.style.opacity = "1";
 
     console.log("Welcome to Mo' The Picnic Guru");
-};
-```
+});
