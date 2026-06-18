@@ -11,22 +11,17 @@
     <meta name="description"
         content="Explore our luxury picnic setups, romantic celebrations, birthday décor, and elegant event styling gallery.">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
 </head>
 
 <body>
-
-    <!-- Navigation -->
 
     <header>
 
@@ -37,13 +32,9 @@
             <ul class="nav-links">
 
                 <li><a href="index.html">Home</a></li>
-
                 <li><a href="about.html">About Us</a></li>
-
                 <li><a href="services.html">Services</a></li>
-
                 <li><a href="gallery.html" class="active">Gallery</a></li>
-
                 <li><a href="contact.html">Contact</a></li>
 
             </ul>
@@ -52,11 +43,9 @@
 
     </header>
 
-    <!-- Main Content -->
-
     <main>
 
-        <!-- Gallery Hero -->
+        <!-- Hero -->
 
         <section class="gallery-hero">
 
@@ -75,7 +64,7 @@
 
         </section>
 
-        <!-- Intro Section -->
+        <!-- Intro -->
 
         <section class="about-preview">
 
@@ -90,253 +79,209 @@
                 luxury experiences filled with beauty, warmth, elegance, and unforgettable memories.
             </p>
 
-            <br>
+        </section>
 
-            <p>
-                Explore some of our romantic setups, luxury picnics,
-                birthday celebrations, themed décor, and personalized event experiences.
-            </p>
+        <!-- Gallery Tools -->
+
+        <section class="gallery-tools">
+
+            <div class="section-title">
+
+                <h2>Browse Our Work</h2>
+
+                <p>Explore by category or search your favourite experience.</p>
+
+            </div>
+
+            <div class="gallery-controls">
+
+                <button class="gallery-filter active" data-filter="all">All</button>
+                <button class="gallery-filter" data-filter="picnic">Picnics</button>
+                <button class="gallery-filter" data-filter="romantic">Romantic</button>
+                <button class="gallery-filter" data-filter="birthday">Birthdays</button>
+                <button class="gallery-filter" data-filter="decor">Décor</button>
+
+            </div>
+
+            <div class="gallery-search">
+
+                <input
+                    type="text"
+                    id="gallerySearch"
+                    placeholder="Search gallery experiences...">
+
+            </div>
 
         </section>
 
-        <!-- Gallery Grid -->
+        <!-- Gallery -->
 
         <section class="gallery-section">
 
             <div class="gallery-container">
 
-                <!-- Image 1 -->
-
-                <div class="gallery-card">
-
-                    <img src="images/picnic1.jpeg" alt="Luxury Picnic Setup">
-
+                <div class="gallery-card" data-category="picnic">
+                    <img src="images/picnic1.jpeg" alt="Luxury Picnic Setup" data-title="Luxury Picnic Setup">
                     <div class="gallery-info">
-
                         <h3>Luxury Picnic Setup</h3>
-
                         <p>Elegant outdoor picnic styling designed for unforgettable moments.</p>
-
                     </div>
-
                 </div>
 
-                <!-- Image 2 -->
-
-                <div class="gallery-card">
-
-                    <img src="images/picnic2.jpeg" alt="Romantic Setup">
-
+                <div class="gallery-card" data-category="romantic">
+                    <img src="images/picnic2.jpeg" alt="Romantic Setup" data-title="Romantic Setup">
                     <div class="gallery-info">
-
                         <h3>Romantic Celebration</h3>
-
                         <p>Beautiful décor created for intimate and memorable experiences.</p>
-
                     </div>
-
                 </div>
 
-                <!-- Image 3 -->
-
-                <div class="gallery-card">
-
-                    <img src="images/picnic3.jpeg" alt="Birthday Décor">
-
+                <div class="gallery-card" data-category="birthday">
+                    <img src="images/picnic3.jpeg" alt="Birthday Décor" data-title="Birthday Décor">
                     <div class="gallery-info">
-
                         <h3>Birthday Styling</h3>
-
                         <p>Luxury birthday décor with elegant details and beautiful themes.</p>
-
                     </div>
-
                 </div>
 
-                <!-- Image 4 -->
-
-                <div class="gallery-card">
-
-                    <img src="images/picnic4.jpeg" alt="Luxury Event">
-
+                <div class="gallery-card" data-category="decor">
+                    <img src="images/picnic4.jpeg" alt="Luxury Event" data-title="Luxury Event">
                     <div class="gallery-info">
-
                         <h3>Luxury Event Setup</h3>
-
                         <p>Elegant event styling designed with creativity and sophistication.</p>
-
                     </div>
-
                 </div>
 
-                <!-- Image 5 -->
-
-                <div class="gallery-card">
-
-                    <img src="images/picnic6.jpeg" alt="Elegant Picnic">
-
+                <div class="gallery-card" data-category="picnic">
+                    <img src="images/picnic6.jpeg" alt="Elegant Picnic" data-title="Elegant Picnic">
                     <div class="gallery-info">
-
                         <h3>Elegant Picnic Experience</h3>
-
                         <p>Luxury picnic setup designed for comfort and beauty.</p>
-
                     </div>
-
                 </div>
 
-                <!-- Image 6 -->
-
-                <div class="gallery-card">
-
-                    <img src="images/picnic7.jpeg" alt="Luxury Styling">
-
+                <div class="gallery-card" data-category="decor">
+                    <img src="images/picnic7.jpeg" alt="Luxury Styling" data-title="Luxury Styling">
                     <div class="gallery-info">
-
                         <h3>Luxury Décor Styling</h3>
-
                         <p>Beautifully curated décor tailored for memorable celebrations.</p>
-
                     </div>
-
                 </div>
 
-                <!-- Image 7 -->
-
-                <div class="gallery-card">
-
-                    <img src="images/picnic8.jpeg" alt="Elegant Celebration">
-
+                <div class="gallery-card" data-category="birthday">
+                    <img src="images/picnic8.jpeg" alt="Elegant Celebration" data-title="Elegant Celebration">
                     <div class="gallery-info">
-
                         <h3>Elegant Celebration</h3>
-
                         <p>Stylish and personalized celebration décor with luxury aesthetics.</p>
-
                     </div>
-
                 </div>
 
-                <!-- Image 8 -->
-
-                <div class="gallery-card">
-
-                    <img src="images/picnic11.jpeg" alt="Luxury Picnic Design">
-
+                <div class="gallery-card" data-category="picnic">
+                    <img src="images/picnic11.jpeg" alt="Luxury Picnic Design" data-title="Luxury Picnic Design">
                     <div class="gallery-info">
-
                         <h3>Luxury Picnic Design</h3>
-
                         <p>Modern picnic styling with warm luxury-inspired décor.</p>
-
                     </div>
-
                 </div>
 
-                <!-- Image 9 -->
-
-                <div class="gallery-card">
-
-                    <img src="images/picnic12.jpeg" alt="Luxury Event Décor">
-
+                <div class="gallery-card" data-category="decor">
+                    <img src="images/picnic12.jpeg" alt="Luxury Event Décor" data-title="Luxury Event Décor">
                     <div class="gallery-info">
-
                         <h3>Elegant Event Décor</h3>
-
                         <p>Beautiful décor details created for unforgettable experiences.</p>
-
                     </div>
-
                 </div>
 
-                <!-- Image 10 -->
-
-                <div class="gallery-card">
-
-                    <img src="images/picnic13.jpeg" alt="Luxury Romantic Setup">
-
+                <div class="gallery-card" data-category="romantic">
+                    <img src="images/picnic13.jpeg" alt="Luxury Romantic Setup" data-title="Luxury Romantic Setup">
                     <div class="gallery-info">
-
                         <h3>Romantic Luxury Setup</h3>
-
                         <p>Dreamy romantic styling designed for special occasions.</p>
-
                     </div>
-
                 </div>
 
-                <!-- Image 11 -->
-
-                <div class="gallery-card">
-
-                    <img src="images/picnic14.jpeg" alt="Elegant Setup">
-
+                <div class="gallery-card" data-category="decor">
+                    <img src="images/picnic14.jpeg" alt="Elegant Setup" data-title="Elegant Setup">
                     <div class="gallery-info">
-
                         <h3>Elegant Setup</h3>
-
                         <p>Luxury styling filled with elegance, comfort, and beauty.</p>
-
                     </div>
-
                 </div>
 
-                <!-- Image 12 -->
-
-                <div class="gallery-card">
-
-                    <img src="images/picnic16.jpeg" alt="Luxury Picnic Celebration">
-
+                <div class="gallery-card" data-category="birthday">
+                    <img src="images/picnic16.jpeg" alt="Luxury Celebration" data-title="Luxury Celebration">
                     <div class="gallery-info">
-
                         <h3>Luxury Celebration</h3>
-
                         <p>Personalized décor designed to create beautiful memories.</p>
-
                     </div>
-
                 </div>
 
-                <!-- Image 13 -->
-
-                <div class="gallery-card">
-
-                    <img src="images/picnic18.jpeg" alt="Luxury Event Styling">
-
+                <div class="gallery-card" data-category="decor">
+                    <img src="images/picnic18.jpeg" alt="Luxury Event Styling" data-title="Luxury Event Styling">
                     <div class="gallery-info">
-
                         <h3>Luxury Event Styling</h3>
-
                         <p>Elegant event experiences crafted with creativity and style.</p>
-
                     </div>
-
                 </div>
 
             </div>
 
         </section>
 
-        <!-- Closing Section -->
+        <!-- Stats -->
 
-        <section class="about-preview closing-gallery">
+        <section class="gallery-stats">
 
             <div class="section-title">
 
-                <h2>Creating Memories That Last Forever</h2>
+                <h2>Gallery Highlights</h2>
 
             </div>
 
-            <p>
-                Every celebration we create reflects our passion for elegance,
-                luxury styling, and unforgettable experiences designed with love and creativity.
-            </p>
+            <div class="stats-container">
+
+                <div class="stat-card">
+                    <h3 class="counter" data-target="150">0</h3>
+                    <p>Events Styled</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3 class="counter" data-target="500">0</h3>
+                    <p>Photos Captured</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3 class="counter" data-target="100">0</h3>
+                    <p>Happy Clients</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Closing -->
+
+        <section class="cta-section">
+
+            <h2>Creating Memories That Last Forever</h2>
+
+            <a href="contact.html" class="hero-btn">
+                Book Your Experience
+            </a>
 
         </section>
 
     </main>
 
-    <!-- Footer -->
+    <!-- Lightbox -->
+
+    <div id="galleryLightbox" class="lightbox">
+
+        <span id="closeLightbox">&times;</span>
+
+        <img id="lightboxImage" src="" alt="Gallery Preview">
+
+    </div>
 
     <footer>
 
