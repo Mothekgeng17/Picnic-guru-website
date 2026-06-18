@@ -11,22 +11,17 @@
     <meta name="description"
         content="Contact Mo' The Picnic Guru for luxury picnic bookings, romantic setups, birthday décor, and event styling in Limpopo.">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
 </head>
 
 <body>
-
-    <!-- Navigation -->
 
     <header>
 
@@ -37,13 +32,9 @@
             <ul class="nav-links">
 
                 <li><a href="index.html">Home</a></li>
-
                 <li><a href="about.html">About Us</a></li>
-
                 <li><a href="services.html">Services</a></li>
-
                 <li><a href="gallery.html">Gallery</a></li>
-
                 <li><a href="contact.html" class="active">Contact</a></li>
 
             </ul>
@@ -52,11 +43,9 @@
 
     </header>
 
-    <!-- Main Content -->
-
     <main>
 
-        <!-- Contact Hero -->
+        <!-- Hero -->
 
         <section class="contact-hero">
 
@@ -64,7 +53,7 @@
 
             <div class="contact-hero-content">
 
-                <h1>Let’s Create Something Beautiful</h1>
+                <h1>Let's Create Something Beautiful</h1>
 
                 <p>
                     Luxury picnic experiences and elegant event styling tailored just for you.
@@ -74,7 +63,7 @@
 
         </section>
 
-        <!-- Intro Section -->
+        <!-- Intro -->
 
         <section class="contact-intro">
 
@@ -109,127 +98,150 @@
 
         </section>
 
+        <!-- Progress Tracker -->
+
+        <section class="progress-section">
+
+            <div class="section-title">
+
+                <h2>Booking Progress</h2>
+
+            </div>
+
+            <div class="form-progress">
+
+                <div id="progressBar"></div>
+
+            </div>
+
+        </section>
+
         <!-- Contact Layout -->
 
         <section class="contact-section">
 
             <div class="contact-container">
 
-                <!-- Contact Form -->
+                <!-- Form -->
 
                 <div class="contact-card">
 
                     <h3>Booking Enquiry Form</h3>
 
-                    <form>
-
-                        <br>
+                    <form id="bookingForm">
 
                         <label>Full Name</label>
-                        <br><br>
-
-                        <input type="text" placeholder="Enter your full name" required>
-
-                        <br><br>
+                        <input type="text" id="fullName" placeholder="Enter your full name" required>
 
                         <label>Email Address</label>
-                        <br><br>
-
-                        <input type="email" placeholder="Enter your email address" required>
-
-                        <br><br>
+                        <input type="email" id="email" placeholder="Enter your email address" required>
 
                         <label>Phone Number</label>
-                        <br><br>
-
-                        <input type="tel" placeholder="Enter your phone number" required>
-
-                        <br><br>
+                        <input type="tel" id="phone" placeholder="Enter your phone number" required>
 
                         <label>Select Service</label>
-                        <br><br>
 
-                        <select required>
+                        <select id="serviceChoice" required>
 
                             <option value="">Choose a service</option>
-
-                            <option>Luxury Picnic Setup</option>
-
-                            <option>Romantic Celebration</option>
-
-                            <option>Birthday Décor</option>
-
-                            <option>Kiddies Party</option>
-
-                            <option>Event Styling</option>
-
-                            <option>Other</option>
+                            <option value="Luxury Picnic Setup">Luxury Picnic Setup</option>
+                            <option value="Romantic Celebration">Romantic Celebration</option>
+                            <option value="Birthday Décor">Birthday Décor</option>
+                            <option value="Kiddies Party">Kiddies Party</option>
+                            <option value="Event Styling">Event Styling</option>
+                            <option value="Other">Other</option>
 
                         </select>
 
-                        <br><br>
+                        <label>Luxury Package</label>
+
+                        <select id="packageChoice">
+
+                            <option value="">Select Package</option>
+                            <option value="Standard">Standard</option>
+                            <option value="Premium">Premium</option>
+                            <option value="VIP">VIP</option>
+
+                        </select>
+
+                        <button type="button" id="estimateContactBtn" class="hero-btn">
+                            Estimate Package
+                        </button>
+
+                        <div id="contactEstimateResult"></div>
 
                         <label>Your Message</label>
-                        <br><br>
 
-                        <textarea rows="6"
+                        <textarea
+                            rows="6"
+                            id="message"
+                            maxlength="300"
                             placeholder="Tell us more about your celebration"></textarea>
 
-                        <br><br>
+                        <div class="character-counter">
+
+                            <span id="charCount">0</span>/300 Characters
+
+                        </div>
 
                         <button type="submit" class="hero-btn">
+
                             Send Booking Request
+
                         </button>
+
+                        <div id="formSuccess"></div>
 
                     </form>
 
                 </div>
 
-                <!-- Contact Information -->
+                <!-- Contact Details -->
 
                 <div class="contact-card">
 
-                    <img src="images/picnic13.jpeg" alt="Luxury Event Styling" class="contact-image">
+                    <img src="images/picnic13.jpeg"
+                        alt="Luxury Event Styling"
+                        class="contact-image">
 
                     <div class="contact-details">
 
                         <h3>Contact Information</h3>
 
-                        <br>
-
                         <p>
+
                             <strong>Phone:</strong><br>
                             084 270 5443
+
                         </p>
 
-                        <br>
-
                         <p>
+
                             <strong>Email:</strong><br>
                             info@thepicnicguru.co.za
+
                         </p>
 
-                        <br>
-
                         <p>
+
                             <strong>Location:</strong><br>
                             Limpopo, South Africa
+
                         </p>
 
-                        <br>
-
                         <p>
+
                             <strong>Business Hours:</strong><br>
+
                             Monday – Saturday<br>
                             08:00 – 18:00
+
                         </p>
 
-                        <br>
+                        <p id="businessStatus">
 
-                        <p>
-                            <strong>Bookings:</strong><br>
-                            Quotes and bookings available via WhatsApp,
-                            email, and social media.
+                            Checking business status...
+
                         </p>
 
                     </div>
@@ -240,7 +252,29 @@
 
         </section>
 
-        <!-- Social Media -->
+        <!-- Quick Booking -->
+
+        <section class="quick-booking">
+
+            <div class="section-title">
+
+                <h2>Quick WhatsApp Booking</h2>
+
+                <p>
+                    Generate a booking message instantly.
+                </p>
+
+            </div>
+
+            <button id="whatsappBooking" class="hero-btn">
+
+                Generate WhatsApp Booking
+
+            </button>
+
+        </section>
+
+        <!-- Social -->
 
         <section class="social-section">
 
@@ -269,9 +303,47 @@
 
         </section>
 
-    </main>
+        <!-- Stats -->
 
-    <!-- Footer -->
+        <section class="gallery-stats">
+
+            <div class="section-title">
+
+                <h2>Why Clients Trust Us</h2>
+
+            </div>
+
+            <div class="stats-container">
+
+                <div class="stat-card">
+
+                    <h3 class="counter" data-target="150">0</h3>
+
+                    <p>Events Styled</p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h3 class="counter" data-target="100">0</h3>
+
+                    <p>Happy Clients</p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h3 class="counter" data-target="5">0</h3>
+
+                    <p>Service Categories</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
 
     <footer>
 
