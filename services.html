@@ -11,22 +11,17 @@
     <meta name="description"
         content="Explore luxury picnic setups, romantic décor, birthday celebrations, kiddies parties, and event styling services offered by Mo' The Picnic Guru in Limpopo.">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
 </head>
 
 <body>
-
-    <!-- Navigation -->
 
     <header>
 
@@ -52,11 +47,9 @@
 
     </header>
 
-    <!-- Main Content -->
-
     <main>
 
-        <!-- Hero Section -->
+        <!-- Hero -->
 
         <section class="services-hero">
 
@@ -74,7 +67,7 @@
 
         </section>
 
-        <!-- Intro Section -->
+        <!-- Introduction -->
 
         <section class="about-preview services-intro">
 
@@ -109,7 +102,31 @@
 
         </section>
 
-        <!-- Services Cards -->
+        <!-- Service Filter -->
+
+        <section class="filter-section">
+
+            <div class="section-title">
+
+                <h2>Browse Services</h2>
+
+                <p>Select a category to explore our offerings.</p>
+
+            </div>
+
+            <div class="filter-buttons">
+
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="picnic">Picnics</button>
+                <button class="filter-btn" data-filter="romantic">Romantic</button>
+                <button class="filter-btn" data-filter="celebration">Celebrations</button>
+                <button class="filter-btn" data-filter="decor">Décor</button>
+
+            </div>
+
+        </section>
+
+        <!-- Services -->
 
         <section class="services-section">
 
@@ -125,9 +142,7 @@
 
             <div class="services-container">
 
-                <!-- Luxury Picnics -->
-
-                <div class="service-card">
+                <div class="service-card" data-category="picnic">
 
                     <h3>Luxury Picnic Setups</h3>
 
@@ -138,9 +153,7 @@
 
                 </div>
 
-                <!-- Romantic Setups -->
-
-                <div class="service-card">
+                <div class="service-card" data-category="romantic">
 
                     <h3>Romantic Celebrations</h3>
 
@@ -151,9 +164,7 @@
 
                 </div>
 
-                <!-- Birthday Celebrations -->
-
-                <div class="service-card">
+                <div class="service-card" data-category="celebration">
 
                     <h3>Birthday Celebrations</h3>
 
@@ -164,9 +175,7 @@
 
                 </div>
 
-                <!-- Kiddies Parties -->
-
-                <div class="service-card">
+                <div class="service-card" data-category="celebration">
 
                     <h3>Kiddies Themed Parties</h3>
 
@@ -177,9 +186,7 @@
 
                 </div>
 
-                <!-- Venue Decorations -->
-
-                <div class="service-card">
+                <div class="service-card" data-category="decor">
 
                     <h3>Room & Venue Decorations</h3>
 
@@ -190,9 +197,7 @@
 
                 </div>
 
-                <!-- Venue Assistance -->
-
-                <div class="service-card">
+                <div class="service-card" data-category="decor">
 
                     <h3>Venue Assistance</h3>
 
@@ -207,7 +212,102 @@
 
         </section>
 
-        <!-- Feature Section -->
+        <!-- Package Estimator -->
+
+        <section class="estimator-section">
+
+            <div class="section-title">
+
+                <h2>Package Estimator</h2>
+
+                <p>Get an estimated package range.</p>
+
+            </div>
+
+            <div class="estimator-container">
+
+                <select id="serviceSelect">
+
+                    <option value="">Choose Service</option>
+                    <option value="picnic">Luxury Picnic Setup</option>
+                    <option value="romantic">Romantic Celebration</option>
+                    <option value="birthday">Birthday Celebration</option>
+                    <option value="decor">Venue Décor</option>
+
+                </select>
+
+                <select id="luxuryLevel">
+
+                    <option value="">Choose Luxury Level</option>
+                    <option value="standard">Standard</option>
+                    <option value="premium">Premium</option>
+                    <option value="vip">VIP</option>
+
+                </select>
+
+                <button id="estimateBtn" class="hero-btn">
+                    Estimate Package
+                </button>
+
+                <div id="estimateResult"></div>
+
+            </div>
+
+        </section>
+
+        <!-- Popular Services -->
+
+        <section class="popularity-section">
+
+            <div class="section-title">
+
+                <h2>Most Requested Experiences</h2>
+
+            </div>
+
+            <div class="progress-container">
+
+                <div class="progress-item">
+
+                    <h3>Luxury Picnics</h3>
+
+                    <div class="progress-bar" data-progress="95">
+
+                        <span>95%</span>
+
+                    </div>
+
+                </div>
+
+                <div class="progress-item">
+
+                    <h3>Romantic Setups</h3>
+
+                    <div class="progress-bar" data-progress="90">
+
+                        <span>90%</span>
+
+                    </div>
+
+                </div>
+
+                <div class="progress-item">
+
+                    <h3>Birthday Celebrations</h3>
+
+                    <div class="progress-bar" data-progress="85">
+
+                        <span>85%</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Feature -->
 
         <section class="feature-section">
 
@@ -288,8 +388,6 @@
         </section>
 
     </main>
-
-    <!-- Footer -->
 
     <footer>
 
