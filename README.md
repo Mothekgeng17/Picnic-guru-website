@@ -331,9 +331,6 @@ The completed project successfully achieved:
 
 GitHub Pages Link:
 
-Add your published GitHub Pages URL here.
-
-Example:
 https://github.com/Mothekgeng17/Picnic-guru-website
 
 ---
