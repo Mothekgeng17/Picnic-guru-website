@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://Mothekgeng17.github.io/mo-the-picnic-guru/sitemap.xml
+Sitemap: https://mothekgeng17.github.io/Picnic-guru-website/sitemap.xml
