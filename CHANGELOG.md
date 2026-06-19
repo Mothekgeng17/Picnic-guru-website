@@ -6,6 +6,63 @@ The format is based on Keep a Changelog principles,
 and this project follows Semantic Versioning practices.
 
 ---
+## [3.0] - 2026-06-19
+
+### Added
+
+* Complete website modernization across all pages
+* Home Page V2 with enhanced content structure and improved user experience
+* About Page V2 with modern luxury branding presentation
+* Services Page V2 with expanded service showcases and improved layouts
+* Gallery Page V2 with improved image presentation and interactive support
+* Contact Page V2 with enhanced booking enquiry experience
+* Advanced JavaScript implementation throughout the website
+* Scroll reveal animations using Intersection Observer
+* Dynamic page transitions and animation effects
+* Interactive button hover effects
+* Enhanced gallery image interactions
+* Gallery search functionality support
+* Gallery filtering functionality support
+* Lightbox gallery viewing support
+* Contact form progress tracking functionality
+* Character counter functionality for form fields
+* Dynamic business hours status indicator
+* Service cost estimator functionality
+* Scroll-to-top button functionality
+* Dynamic footer year generation
+* Expanded DOM manipulation and event handling implementation
+
+### Changed
+
+* Rebuilt page structures to support advanced JavaScript functionality
+* Improved semantic HTML structure across all pages
+* Enhanced navigation and user interactions
+* Improved accessibility and responsive behaviour
+* Refined typography, spacing, and visual hierarchy
+* Enhanced gallery responsiveness and image presentation
+* Upgraded luxury aesthetic styling throughout the website
+* Improved maintainability and scalability of the codebase
+* Expanded CSS architecture to support modern UI components
+
+### Enhanced
+
+* Front-end development implementation
+* User engagement and interactive experiences
+* Mobile responsiveness across all devices
+* Website performance and visual consistency
+* JavaScript functionality and overall project complexity
+* GitHub repository presentation and project documentation
+
+### Fixed
+
+* Cross-page layout inconsistencies
+* Navigation styling inconsistencies
+* Responsive image display issues
+* Mobile layout alignment issues
+* Visual spacing inconsistencies
+* General UI and UX refinements
+
+---
 
 ## [2.5] - 2026-05-29
 
